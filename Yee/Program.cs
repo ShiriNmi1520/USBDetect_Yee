@@ -14,9 +14,6 @@ namespace Yee
         private static Timer YeeTimer;
         private static WindowsMediaPlayer Player;
 
-        /** /
-        啟動計時器，每三秒偵測一次USB Device
-        /**/
         private void SetupYeeTimer()
         {
             YeeTimer = new Timer(3000);
@@ -25,9 +22,6 @@ namespace Yee
             YeeTimer.Enabled = true;
         }
 
-        /** /
-        定義計時器執行Function
-        /**/
         private void OnTime(Object source, ElapsedEventArgs e)
         {
             if (GetConnectedDevices().Count() > 0)
@@ -39,9 +33,6 @@ namespace Yee
             }
         }
 
-        /** /
-        獲取已連接USB儲存裝置
-        /**/
         public static List<DriveInfo> GetConnectedDevices()
         {
             //Put all connected drives into an array
@@ -52,9 +43,6 @@ namespace Yee
             return myDrives.Where(info => (info.DriveType == DriveType.Removable && info.IsReady)).ToList();
         }
 
-        /** /
-        WMP初始化、播放影片
-        /**/
         private void Yee()
         {
             Process[] processes = Process.GetProcessesByName("wmplayer");
@@ -73,9 +61,6 @@ namespace Yee
             }
         }
 
-        /** /
-        將自身註冊到工作排程器並執行
-        /**/
         private void RegisterService()
         {
             try
@@ -107,9 +92,6 @@ namespace Yee
 
         }
 
-        /** /
-        檢查某服務是否已經存在
-        /**/
         bool DoesServiceExist(string serviceName)
         {
             return ServiceController.GetServices().Any(serviceController => serviceController.ServiceName.Equals(serviceName));
