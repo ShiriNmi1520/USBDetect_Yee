@@ -54,7 +54,7 @@ namespace Yee
                     Player.uiMode = "Full";
                     Player.enableContextMenu = false;
                     Player.settings.volume = 100;
-                    Player.openPlayer(@Directory.GetCurrentDirectory() + "\\yee10HR\\yee.mp4");
+                    Player.openPlayer(AppDomain.CurrentDomain.BaseDirectory + "\\yee10HR\\yee.mp4");
                     Player.controls.play();
                     System.Threading.Thread.Sleep(1000);
                 }
@@ -98,16 +98,11 @@ namespace Yee
             Program UsbDetect = new Program();
             if (args.Length == 0)
             {
-                ProcessStartInfo info = new ProcessStartInfo(@Directory.GetCurrentDirectory() + "\\Yee.exe");
-                info.UseShellExecute = false;
-                info.RedirectStandardError = true;
-                info.RedirectStandardInput = true;
-                info.RedirectStandardOutput = true;
-                info.CreateNoWindow = true;
-                info.ErrorDialog = false;
-                info.WindowStyle = ProcessWindowStyle.Hidden;
                 UsbDetect.SetupYeeTimer();
-                while (true) { YeeTimer.Start(); }
+                while (true)
+                {
+                    YeeTimer.Start();
+                }
             }
             else {
                 if (args[0] == "InstallService")
