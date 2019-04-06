@@ -1,0 +1,17 @@
+F:\Yee\Yee\bin\Debug\yee10HR\yee.mp4
+F:\Yee\Yee\bin\Debug\Yee.exe.config
+F:\Yee\Yee\bin\Debug\Yee.exe
+F:\Yee\Yee\bin\Debug\Yee.pdb
+F:\Yee\Yee\bin\Debug\System.Diagnostics.EventLog.dll
+F:\Yee\Yee\bin\Debug\System.Security.AccessControl.dll
+F:\Yee\Yee\bin\Debug\System.Security.Permissions.dll
+F:\Yee\Yee\bin\Debug\System.Security.Principal.Windows.dll
+F:\Yee\Yee\bin\Debug\System.ServiceProcess.ServiceController.dll
+F:\Yee\Yee\obj\Debug\Yee.csprojAssemblyReference.cache
+F:\Yee\Yee\obj\Debug\Interop.TaskScheduler.dll
+F:\Yee\Yee\obj\Debug\Interop.WMPLib.dll
+F:\Yee\Yee\obj\Debug\Yee.csproj.ResolveComReference.cache
+F:\Yee\Yee\obj\Debug\Yee.csproj.CoreCompileInputs.cache
+F:\Yee\Yee\obj\Debug\Yee.csproj.CopyComplete
+F:\Yee\Yee\obj\Debug\Yee.exe
+F:\Yee\Yee\obj\Debug\Yee.pdb
