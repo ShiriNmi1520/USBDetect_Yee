@@ -92,12 +92,6 @@ namespace Yee
 
         }
 
-        bool DoesServiceExist(string serviceName)
-        {
-            return ServiceController.GetServices().Any(serviceController => serviceController.ServiceName.Equals(serviceName));
-        }
-
-
         static void Main(string[] args)
         {
 
